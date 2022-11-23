@@ -2,4 +2,6 @@
   <title>Home Page</title>
 </svelte:head>
 
-<h1>Home page</h1>
+<div id="page-home">
+  <h1>Home page</h1>
+</div>

@@ -1,9 +1,10 @@
+import type { UserConfig } from 'vite'
 import { sveltekit } from '@sveltejs/kit/vite'
 import postcssimport from 'postcss-import'
 import tailwindcss from 'tailwindcss'
 import autoprefixer from 'autoprefixer'
 
-export default {
+const config: UserConfig = {
   plugins: [sveltekit()],
 
   css: {
@@ -16,3 +17,5 @@ export default {
     }
   }
 }
+
+export default config
