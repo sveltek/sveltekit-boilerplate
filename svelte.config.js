@@ -1,20 +1,15 @@
-import { resolve } from 'path'
 import adapter from '@sveltejs/adapter-static'
-import preprocess from 'svelte-preprocess'
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-  preprocess: preprocess(),
-
   kit: {
-    adapter: adapter(),
-
+    adapter: adapter({
+      fallback: '404.html',
+    }),
     alias: {
-      $assets: resolve('./src/assets'),
-      $components: resolve('./src/components'),
-      $config: resolve('./src/config')
-    }
-  }
+      $: 'src',
+    },
+  },
 }
 
 export default config
