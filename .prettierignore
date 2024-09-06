@@ -1,5 +1,13 @@
 .DS_Store
 node_modules
-package-lock.json
+*-lock.*
+*.log*
+.private
+.cache
+.env
 .svelte-kit
-build
+.vercel
+dist
+/build
+/functions
+/package
