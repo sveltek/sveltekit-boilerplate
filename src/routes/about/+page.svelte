@@ -1,7 +1,9 @@
-<svelte:head>
-  <title>About Page</title>
-</svelte:head>
+<script lang="ts">
+  import { Head } from '$/components/head'
+</script>
 
-<div id="page-about">
+<Head title="About page" />
+
+<div>
   <h1>About page</h1>
 </div>
