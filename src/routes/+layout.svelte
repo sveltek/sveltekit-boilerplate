@@ -1,9 +1,17 @@
 <script lang="ts">
-  import '$assets/styles/main.css'
-  import NavMain from '$components/NavMain.svelte'
+  import { page } from '$app/stores'
+  import { app } from '$/config'
+  import { HeaderMain } from '$/components/header'
+  import '../styles/app.css'
+
+  let { children } = $props()
 </script>
 
+<svelte:head>
+  <link rel="canonical" href="{app.url}{$page.url.pathname}" />
+</svelte:head>
+
 <div id="__default">
-  <NavMain />
-  <slot />
+  <HeaderMain />
+  {@render children()}
 </div>
