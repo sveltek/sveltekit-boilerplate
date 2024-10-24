@@ -2,7 +2,7 @@
   import { page } from '$app/stores'
   import { app } from '$/config'
   import { HeaderMain } from '$/components/header'
-  import '../styles/app.css'
+  import '$/styles/app.css'
 
   let { children } = $props()
 </script>
