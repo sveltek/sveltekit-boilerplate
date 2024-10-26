@@ -3,9 +3,10 @@
   "editor.formatOnSave": true,
   "eslint.validate": ["javascript", "typescript", "svelte"],
   "editor.quickSuggestions": {
-    "strings": "on"
+    "strings": true
   },
   "files.associations": {
     "*.css": "tailwindcss"
-  }
+  },
+  "tailwindCSS.experimental.configFile": "./src/styles/app.css"
 }
