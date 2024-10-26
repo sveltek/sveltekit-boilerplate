@@ -1,1 +1,1 @@
-export * from '$/config'
+// Global types only
