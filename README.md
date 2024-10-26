@@ -4,7 +4,7 @@
 
 <h1 align="center">SvelteKit Boilerplate</h1>
 
-<p align="center">This is the latest <a href="https://kit.svelte.dev/" target="_blank">SvelteKit</a> starter template.</p>
+<p align="center">SvelteKit starter template.</p>
 
 <br>
 
