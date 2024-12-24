@@ -1,8 +1,8 @@
 <script lang="ts">
-  import { Head } from '$/components/head'
+  import { Metadata } from '$/components'
 </script>
 
-<Head title="About page" />
+<Metadata title="About page" />
 
 <div>
   <h1>About page</h1>
