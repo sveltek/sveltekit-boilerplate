@@ -26,28 +26,28 @@
     "lint:fix": "eslint --fix .",
     "format": "prettier --write ."
   },
-  "packageManager": "pnpm@9.14.2",
+  "packageManager": "pnpm@9.15.1",
   "engines": {
     "node": ">=20.0.0",
     "pnpm": ">=9.0.0"
   },
   "devDependencies": {
-    "@hypernym/eslint-config": "^3.5.2",
+    "@hypernym/eslint-config": "^3.5.4",
     "@hypernym/prettier-config": "^3.2.1",
-    "@sveltejs/adapter-static": "^3.0.6",
-    "@sveltejs/kit": "^2.8.2",
-    "@sveltejs/vite-plugin-svelte": "^4.0.1",
-    "@tailwindcss/vite": "^4.0.0-beta.2",
-    "@types/node": "^22.9.3",
-    "eslint": "^9.15.0",
-    "eslint-plugin-svelte": "^2.46.0",
-    "prettier": "^3.3.3",
+    "@sveltejs/adapter-static": "^3.0.8",
+    "@sveltejs/kit": "^2.15.0",
+    "@sveltejs/vite-plugin-svelte": "^5.0.3",
+    "@tailwindcss/vite": "^4.0.0-beta.8",
+    "@types/node": "^22.10.2",
+    "eslint": "^9.17.0",
+    "eslint-plugin-svelte": "^2.46.1",
+    "prettier": "^3.4.2",
     "prettier-plugin-svelte": "^3.3.2",
-    "svelte": "^5.2.7",
-    "svelte-check": "^4.1.0",
+    "svelte": "^5.16.0",
+    "svelte-check": "^4.1.1",
     "svelte-eslint-parser": "^0.43.0",
-    "tailwindcss": "^4.0.0-beta.2",
-    "typescript": "^5.6.3",
-    "vite": "^5.4.11"
+    "tailwindcss": "^4.0.0-beta.8",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.5"
   }
 }
