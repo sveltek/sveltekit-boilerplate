@@ -1,9 +1,11 @@
 <script lang="ts">
-  import { app } from '$/config'
+  import { page } from '$app/state'
   import type { MetadataOptions } from './types'
 
-  const meta: MetadataOptions = $props()
-  const { facebook: fb, twitter: tw } = meta
+  const { app } = page.data
+
+  let meta: MetadataOptions = $props()
+  let { facebook: fb, twitter: tw } = meta
 </script>
 
 <svelte:head>
