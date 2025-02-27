@@ -4,7 +4,10 @@
   "author": "Ivo Dolenc",
   "description": "SvelteKit starter template.",
   "license": "MIT",
-  "repository": "ivodolenc/sveltekit-boilerplate",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivodolenc/sveltekit-boilerplate.git"
+  },
   "homepage": "https://github.com/ivodolenc/sveltekit-boilerplate",
   "private": true,
   "type": "module",
@@ -26,28 +29,28 @@
     "lint:fix": "eslint --fix .",
     "format": "prettier --write ."
   },
-  "packageManager": "pnpm@9.15.4",
+  "packageManager": "pnpm@10.5.2",
   "engines": {
     "node": ">=20.0.0",
     "pnpm": ">=9.0.0"
   },
   "devDependencies": {
-    "@hypernym/eslint-config": "^3.5.4",
-    "@hypernym/prettier-config": "^3.2.1",
+    "@hypernym/eslint-config": "^3.5.8",
+    "@hypernym/prettier-config": "^3.2.3",
     "@sveltejs/adapter-static": "^3.0.8",
-    "@sveltejs/kit": "^2.16.1",
+    "@sveltejs/kit": "^2.17.3",
     "@sveltejs/vite-plugin-svelte": "^5.0.3",
-    "@tailwindcss/vite": "^4.0.0",
-    "@types/node": "^22.10.7",
-    "eslint": "^9.18.0",
-    "eslint-plugin-svelte": "^2.46.1",
-    "prettier": "^3.4.2",
+    "@tailwindcss/vite": "^4.0.9",
+    "@types/node": "^22.13.5",
+    "eslint": "^9.21.0",
+    "eslint-plugin-svelte": "^3.0.2",
+    "prettier": "^3.5.2",
     "prettier-plugin-svelte": "^3.3.3",
-    "svelte": "^5.19.2",
+    "svelte": "^5.20.5",
     "svelte-check": "^4.1.4",
-    "svelte-eslint-parser": "^0.43.0",
-    "tailwindcss": "^4.0.0",
+    "svelte-eslint-parser": "^1.0.0",
+    "tailwindcss": "^4.0.9",
     "typescript": "^5.7.3",
-    "vite": "^6.0.11"
+    "vite": "^6.2.0"
   }
 }
