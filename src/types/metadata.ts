@@ -1,4 +1,4 @@
-export interface MetadataOptions {
+export interface Metadata {
   title?: string
   titleTemplate?: (title: string, description: string) => string
   description?: string
@@ -6,7 +6,6 @@ export interface MetadataOptions {
   author?: string
   creator?: string
   publisher?: string
-
   // @see https://ogp.me/#metadata
   facebook?: {
     url?: string
@@ -33,7 +32,6 @@ export interface MetadataOptions {
     imageHeight?: string
     imageAlt?: string
   }
-
   // @see https://developer.x.com/en/docs/x-for-websites/cards/overview/markup
   twitter?: {
     card?: 'summary' | 'summary_large_image' | 'app' | 'player'

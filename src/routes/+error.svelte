@@ -1,9 +1,11 @@
 <script lang="ts">
   import { page } from '$app/state'
-  import { Metadata } from '$/components'
 </script>
 
-<Metadata title={`Error ${page.status}`} description={page.error?.message} />
+<svelte:head>
+  <title>Error {page.status}</title>
+  <meta name="description" content={page.error?.message} />
+</svelte:head>
 
 <div id="__error">
   <h1>{page.status}</h1>

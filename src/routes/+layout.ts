@@ -17,5 +17,9 @@ export const load: LayoutLoad = async ({ url }) => {
       description: 'SvelteKit starter template.',
       url: 'https://sveltekit-boilerplate.dev',
     },
+    metadata: {
+      title: 'Starter Template',
+      description: 'SvelteKit starter template.',
+    },
   }
 }
