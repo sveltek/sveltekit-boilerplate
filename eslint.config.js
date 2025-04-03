@@ -1,5 +1,9 @@
-import { jsConfig, tsConfig, ignoresConfig } from '@hypernym/eslint-config'
-import { svelteConfig } from '@hypernym/eslint-config/svelte'
+import {
+  jsConfig,
+  tsConfig,
+  svelteConfig,
+  ignoresConfig,
+} from '@sveltek/eslint-config'
 
 /** @type {import("eslint").Linter.Config[]} */
 export default [jsConfig, tsConfig, svelteConfig, ignoresConfig]
