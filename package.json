@@ -29,24 +29,24 @@
     "lint:fix": "eslint --fix .",
     "format": "prettier --write ."
   },
-  "packageManager": "pnpm@10.7.1",
+  "packageManager": "pnpm@10.8.1",
   "engines": {
     "node": ">=20.0.0",
     "pnpm": ">=10.0.0"
   },
   "devDependencies": {
     "@sveltejs/adapter-static": "^3.0.8",
-    "@sveltejs/kit": "^2.20.3",
+    "@sveltejs/kit": "^2.20.7",
     "@sveltek/eslint-config": "^1.0.0",
     "@sveltek/prettier-config": "^1.0.2",
-    "@tailwindcss/vite": "^4.1.1",
-    "@types/node": "^22.14.0",
-    "eslint": "^9.23.0",
+    "@tailwindcss/vite": "^4.1.4",
+    "@types/node": "^22.14.1",
+    "eslint": "^9.24.0",
     "prettier": "^3.5.3",
-    "svelte": "^5.25.6",
-    "svelte-check": "^4.1.5",
-    "tailwindcss": "^4.1.1",
-    "typescript": "^5.8.2",
-    "vite": "^6.2.5"
+    "svelte": "^5.27.0",
+    "svelte-check": "^4.1.6",
+    "tailwindcss": "^4.1.4",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.0"
   }
 }
