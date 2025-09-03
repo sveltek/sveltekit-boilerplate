@@ -1,23 +1,39 @@
 <script lang="ts">
+  import { dev } from '$app/environment'
   import { page } from '$app/state'
   import { HeaderMain } from '$/components'
+  import type { Metadata } from '$/types'
   import '$/styles/app.css'
 
-  const metadata = $derived(page.data.metadata ?? {})
+  let metadata = $state<Metadata>({})
 
-  let { children, data } = $props()
+  const setMetadata = () => {
+    let { title, titleTemplate, description } = page.data.metadata || {}
+
+    metadata.title = title || 'Starter Template'
+    metadata.titleTemplate =
+      titleTemplate === null ? '' : titleTemplate || ' — Sveltek'
+    metadata.description = description || 'SvelteKit starter template.'
+    metadata.author = 'Sveltek'
+    metadata.canonical = dev
+      ? 'http://localhost:5173'
+      : 'https://sveltekit-boilerplate.dev'
+  }
+
+  setMetadata()
+  $effect(setMetadata)
+
+  let { children } = $props()
 </script>
 
 <svelte:head>
-  <title>{metadata.title} — {data.app.name}</title>
-  <meta
-    name="description"
-    content={metadata.description || data.app.description}
-  />
-  <link rel="canonical" href="{data.app.url}{page.url.pathname}" />
+  <title>{metadata.title! + metadata.titleTemplate!}</title>
+  <meta name="description" content={metadata.description!} />
+  <meta name="author" content={metadata.author!} />
+  <link rel="canonical" href={metadata.canonical! + page.url.pathname} />
 </svelte:head>
 
-<div id="__default">
+<div data-layout="default">
   <HeaderMain />
   {@render children()}
 </div>

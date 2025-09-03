@@ -7,7 +7,7 @@
   <meta name="description" content={page.error?.message} />
 </svelte:head>
 
-<div id="__error">
+<div data-layout="error">
   <h1>{page.status}</h1>
   <h3>{page.error?.message}</h3>
 </div>

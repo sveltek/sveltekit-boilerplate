@@ -1,6 +1,7 @@
 export interface Metadata {
+  canonical?: string
   title?: string
-  titleTemplate?: (title: string, description: string) => string
+  titleTemplate?: string | null
   description?: string
   applicationName?: string
   author?: string

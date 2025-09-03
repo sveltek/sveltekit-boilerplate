@@ -10,16 +10,5 @@ export const load: LayoutLoad = async ({ url }) => {
     })
   }
 
-  return {
-    app: {
-      name: 'SvelteKit Boilerplate',
-      author: 'Ivo Dolenc',
-      description: 'SvelteKit starter template.',
-      url: 'https://sveltekit-boilerplate.dev',
-    },
-    metadata: {
-      title: 'Starter Template',
-      description: 'SvelteKit starter template.',
-    },
-  }
+  return {}
 }

@@ -6,13 +6,7 @@ declare global {
     // interface Locals {}
 
     interface PageData {
-      app: {
-        name?: string
-        author?: string
-        description?: string
-        url?: string
-      }
-      metadata: Metadata
+      metadata?: Metadata
     }
 
     // interface Platform {}
