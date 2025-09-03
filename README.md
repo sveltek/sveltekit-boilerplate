@@ -2,7 +2,7 @@
   <img src="./static/favicons/icon-512.png" width="96" />
 </p>
 
-<h1 align="center">SvelteKit Boilerplate</h1>
+<h1 align="center">@sveltek/sveltekit-boilerplate</h1>
 
 <p align="center">SvelteKit starter template.</p>
 
@@ -41,6 +41,6 @@ pnpm preview
 
 ## License
 
-Developed in 🇭🇷 Croatia, © Ivo Dolenc.
+Developed in 🇭🇷 Croatia, © Sveltek.
 
 Released under the [MIT](LICENSE.txt) license.
