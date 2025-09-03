@@ -1,6 +1,163 @@
-@layer theme, base;
-
 @import 'tailwindcss';
-@import './theme.css' layer(theme);
-@import './base.css' layer(base);
-@import './utilities.css';
+
+@theme inline {
+  --default-font-family: 'AspektaVF', system-ui;
+  --font-sans: 'AspektaVF', system-ui;
+  --font-sans--font-variation-settings: 'wght' 400;
+  --font-sans--font-feature-settings:
+    'ss01', 'ss02', 'ss03', 'ss05', 'ss06', 'ss08', 'ss11';
+}
+
+@theme {
+  --breakpoint-xs: 30rem;
+  --breakpoint-3xl: 120rem;
+
+  --text-3xs: 0.5rem;
+  --text-3xs--line-height: calc(0.75 / 0.5);
+  --text-2xs: 0.625rem;
+  --text-2xs--line-height: calc(0.875 / 0.625);
+}
+
+@layer theme {
+  :root {
+    --font-100: 'wght' 100;
+    --font-150: 'wght' 150;
+    --font-200: 'wght' 200;
+    --font-250: 'wght' 250;
+    --font-300: 'wght' 300;
+    --font-350: 'wght' 350;
+    --font-400: 'wght' 400;
+    --font-450: 'wght' 450;
+    --font-500: 'wght' 500;
+    --font-550: 'wght' 550;
+    --font-600: 'wght' 600;
+    --font-650: 'wght' 650;
+    --font-700: 'wght' 700;
+    --font-750: 'wght' 750;
+    --font-800: 'wght' 800;
+    --font-850: 'wght' 850;
+    --font-900: 'wght' 900;
+  }
+}
+
+@layer base {
+  html {
+    @apply antialiased bg-black text-neutral-50;
+  }
+
+  button {
+    @variant hover {
+      @apply cursor-pointer;
+    }
+  }
+
+  [data-sveltekit] {
+    @apply contents;
+  }
+}
+
+@utility font-100 {
+  font-variation-settings: var(--font-100);
+}
+
+@utility font-150 {
+  font-variation-settings: var(--font-150);
+}
+
+@utility font-200 {
+  font-variation-settings: var(--font-200);
+}
+
+@utility font-250 {
+  font-variation-settings: var(--font-250);
+}
+
+@utility font-300 {
+  font-variation-settings: var(--font-300);
+}
+
+@utility font-350 {
+  font-variation-settings: var(--font-350);
+}
+
+@utility font-400 {
+  font-variation-settings: var(--font-400);
+}
+
+@utility font-450 {
+  font-variation-settings: var(--font-450);
+}
+
+@utility font-500 {
+  font-variation-settings: var(--font-500);
+}
+
+@utility font-550 {
+  font-variation-settings: var(--font-550);
+}
+
+@utility font-600 {
+  font-variation-settings: var(--font-600);
+}
+
+@utility font-650 {
+  font-variation-settings: var(--font-650);
+}
+
+@utility font-700 {
+  font-variation-settings: var(--font-700);
+}
+
+@utility font-750 {
+  font-variation-settings: var(--font-750);
+}
+
+@utility font-800 {
+  font-variation-settings: var(--font-800);
+}
+
+@utility font-850 {
+  font-variation-settings: var(--font-850);
+}
+
+@utility font-900 {
+  font-variation-settings: var(--font-900);
+}
+
+@utility stroke-linecap-butt {
+  stroke-linecap: butt;
+}
+
+@utility stroke-linecap-square {
+  stroke-linecap: square;
+}
+
+@utility stroke-linecap-round {
+  stroke-linecap: round;
+}
+
+@utility stroke-linejoin-miter {
+  stroke-linejoin: miter;
+}
+
+@utility stroke-linejoin-round {
+  stroke-linejoin: round;
+}
+
+@utility scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    @apply hidden;
+  }
+}
+
+@utility scrollbar-minimal {
+  &::-webkit-scrollbar {
+    @apply appearance-none w-[3px];
+  }
+  &::-webkit-scrollbar-thumb {
+    @apply bg-clip-padding bg-neutral-700 rounded-full;
+  }
+}
