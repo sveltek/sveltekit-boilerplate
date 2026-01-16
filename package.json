@@ -1,6 +1,6 @@
 {
   "name": "@sveltek/sveltekit-boilerplate",
-  "version": "0.10.0",
+  "version": "0.10.1",
   "author": "Sveltek",
   "description": "SvelteKit starter template.",
   "license": "MIT",
