@@ -155,7 +155,7 @@
 
 @utility scrollbar-minimal {
   &::-webkit-scrollbar {
-    @apply appearance-none w-[3px];
+    @apply appearance-none w-0.75;
   }
   &::-webkit-scrollbar-thumb {
     @apply bg-clip-padding bg-neutral-700 rounded-full;
